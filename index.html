@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Butaca VIP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Butaca VIP</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#recomendaciones">Recomendaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#privacidad">Política de privacidad</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><button onclick="toggleLanguage()">🌐 Español / English</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="reseñas">
+      <article class="review">
+        <h2 class="es">Reseña: Duna Parte 2</h2>
+        <h2 class="en hidden">Review: Dune Part Two</h2>
+        <p class="es">Una secuela visualmente deslumbrante que expande el universo de forma épica. Destaca el crecimiento del personaje de Paul y la ambientación inmersiva.</p>
+        <p class="en hidden">A visually stunning sequel that expands the universe in epic fashion. Strong character development and immersive world-building.</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </article>
+
+      <article class="review">
+        <h2 class="es">Reseña: Past Lives</h2>
+        <h2 class="en hidden">Review: Past Lives</h2>
+        <p class="es">Una historia íntima sobre el amor, el tiempo y las decisiones que nos definen. Sensible, sencilla y profundamente humana.</p>
+        <p class="en hidden">A quiet and touching film about love, time, and the paths we don't take. Sensitive, simple, and deeply human.</p>
+        <div class="stars">⭐⭐⭐⭐☆</div>
+      </article>
+    </section>
+
+    <section id="recomendaciones">
+      <h2 class="es">Recomendaciones</h2>
+      <h2 class="en hidden">Recommendations</h2>
+      <ul>
+        <li class="es">"El gran hotel Budapest" - Wes Anderson</li>
+        <li class="en hidden">"The Grand Budapest Hotel" - Wes Anderson</li>
+        <li class="es">"La La Land" - Damien Chazelle</li>
+        <li class="en hidden">"La La Land" - Damien Chazelle</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2 class="es">Contacto</h2>
+      <h2 class="en hidden">Contact</h2>
+      <p class="es">Próximamente podrás contactarme aquí.</p>
+      <p class="en hidden">Coming soon: contact info.</p>
+    </section>
+
+    <section id="privacidad">
+      <h2 class="es">Política de Privacidad</h2>
+      <h2 class="en hidden">Privacy Policy</h2>
+      <p class="es">
+        Este sitio web respeta tu privacidad y no recopila datos personales sin tu consentimiento.
+      </p>
+      <p class="en hidden">
+        This website respects your privacy and does not collect personal data without your consent.
+      </p>
+    </section>
+
+    <section id="sobre-mi">
+      <h2 class="es">Sobre mí</h2>
+      <h2 class="en hidden">About Me</h2>
+      <p class="es">Soy Jedry, apasionado del cine y crítico amateur. Me encanta compartir mis opiniones y descubrir nuevas historias para ti.</p>
+      <p class="en hidden">I’m Jedry, a passionate cinephile and amateur critic. I love sharing my opinions and discovering new stories for you.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Butaca VIP | Hecho con ❤️ por Jedry</p>
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      document.querySelectorAll('.es').forEach(el => el.classList.toggle('hidden'));
+      document.querySelectorAll('.en').forEach(el => el.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+</html>
